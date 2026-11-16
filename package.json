@@ -90,7 +90,7 @@
     "styled-components": "^6.2.0",
     "swr": "^2.4.1",
     "urql": "^3.0.3",
-    "use-debounce": "^9.0.4",
+    "use-debounce": "^10.1.1",
     "viem": "^2.50.4",
     "wagmi": "^2.19.5",
     "yup": "^0.32.11"

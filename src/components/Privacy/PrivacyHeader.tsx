@@ -50,7 +50,7 @@ export default function PrivacyPolicyHeader({
     // Enterprise Collective e.V. as the Portal Operator) was removed, so
     // /privacy/data-portal-usage-agreement returns 404 unless
     // NEXT_PUBLIC_DPUA_URL points at an external document. Add the tab back
-    // once an AgrospAI version exists.
+    // once a Tareando version exists.
     {
       label: 'Cookie Policy',
       href: '/privacy/cookie-policy'

@@ -660,7 +660,7 @@ export function dfnsConnector() {
         const webAuthnSigner = new WebAuthnSigner({
           relyingParty: {
             id: dfnsConfig.relyingPartyId,
-            name: 'AgrospAI Marketplace'
+            name: 'Tareando Data Space'
           }
         })
         const authenticator = new DfnsAuthenticator({

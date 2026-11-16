@@ -1,3 +1,4 @@
+import { withPortalTag } from '@utils/portalTag'
 import { ReactElement, useEffect, useState } from 'react'
 import DebugOutput from '@shared/DebugOutput'
 import { MetadataEditForm } from './_types'
@@ -38,7 +39,7 @@ export default function DebugEditMetadata({
         author: values.author,
         providedBy: values.providedBy || '',
         copyrightHolder: values.copyrightHolder || '',
-        tags: values.tags,
+        tags: withPortalTag(values.tags),
         license: values.license,
         additionalInformation: {
           ...asset?.credentialSubject?.metadata?.additionalInformation,

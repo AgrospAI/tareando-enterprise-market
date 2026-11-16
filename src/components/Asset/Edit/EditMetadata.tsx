@@ -1,3 +1,4 @@
+import { withPortalTag } from '@utils/portalTag'
 import { ReactElement, useState } from 'react'
 import { Formik } from 'formik'
 import { LoggerInstance, Nft } from '@oceanprotocol/lib'
@@ -131,7 +132,7 @@ export default function Edit({
         author: values.author,
         providedBy: values.providedBy || '',
         copyrightHolder: values.copyrightHolder || '',
-        tags: values.tags,
+        tags: withPortalTag(values.tags),
         license,
         additionalInformation: {
           ...asset.credentialSubject?.metadata?.additionalInformation,

@@ -1,3 +1,4 @@
+import { withPortalTag } from '@utils/portalTag'
 import {
   Config,
   FreCreationParams,
@@ -135,7 +136,9 @@ function dateToStringNoMS(date: Date): string {
 
 function transformTags(originalTags: string[]): string[] {
   const transformedTags = originalTags?.map((tag) => slugify(tag).toLowerCase())
-  return transformedTags
+  // Tareando: every asset published here must carry the portal tag, otherwise
+  // it would not be listed in this portal's catalogue.
+  return withPortalTag(transformedTags)
 }
 
 export function transformConsumerParameters(

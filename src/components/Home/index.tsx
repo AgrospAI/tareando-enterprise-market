@@ -13,7 +13,6 @@ import styles from './index.module.css'
 import InputElement from '@shared/FormInput/InputElement'
 
 import Features from './Features/Features'
-import EcosystemStats from './Sections/EcosystemStats'
 import Products from './Sections/Products'
 import Upload from '@images/publish.svg'
 import SearchLogo from '@images/search.svg'
@@ -174,8 +173,6 @@ function HeroSection({
           </div>
         </div>
       </div>
-
-      <EcosystemStats />
 
       {/* wave transition into the light section below */}
       <svg

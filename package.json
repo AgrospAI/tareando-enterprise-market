@@ -43,7 +43,7 @@
     "@uiw/codemirror-themes": "^4.21.12",
     "@uiw/react-codemirror": "^4.19.5",
     "@urql/exchange-refocus": "1.0.0",
-    "axios": "^1.18.1",
+    "axios": "^1.21.1",
     "base64url": "^3.0.1",
     "classnames": "^2.3.2",
     "connectkit": "^1.9.1",
